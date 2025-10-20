@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account - FruitCrush</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #FF6B9D 0%, #FFB6C1 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .logo {
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+        
+        h1 {
+            color: #FF6B9D;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 16px;
+        }
+        
+        .content {
+            margin: 30px 0;
+        }
+        
+        .info-box {
+            background: #FFF9E6;
+            border-left: 4px solid #FFD700;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .info-box h3 {
+            color: #FF6B9D;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        .info-box ul {
+            margin-left: 20px;
+            color: #333;
+        }
+        
+        .info-box li {
+            margin: 8px 0;
+        }
+        
+        .method {
+            background: #f5f5f5;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+        
+        .method h3 {
+            color: #FF6B9D;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        
+        .method p {
+            color: #333;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        
+        .method ol {
+            margin-left: 20px;
+            color: #333;
+        }
+        
+        .method li {
+            margin: 8px 0;
+        }
+        
+        .email-button {
+            display: inline-block;
+            background: #FF6B9D;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: background 0.3s;
+        }
+        
+        .email-button:hover {
+            background: #FF4757;
+        }
+        
+        .warning {
+            background: #FFE5E5;
+            border-left: 4px solid #FF4757;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .warning strong {
+            color: #FF4757;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .footer a {
+            color: #FF6B9D;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">🍓</div>
+            <h1>Delete Your Account</h1>
+            <p class="subtitle">FruitCrush - Data Deletion Request</p>
+        </div>
+        
+        <div class="content">
+            <div class="info-box">
+                <h3>📋 What Will Be Deleted</h3>
+                <ul>
+                    <li>Game progress and scores</li>
+                    <li>Player name and preferences</li>
+                    <li>Achievement progress</li>
+                    <li>All locally stored data</li>
+                    <li>Advertising ID association</li>
+                </ul>
+            </div>
+            
+            <div class="warning">
+                <strong>⚠️ Warning:</strong> This action cannot be undone. All your game progress will be permanently deleted.
+            </div>
+            
+            <h2 style="color: #FF6B9D; margin: 30px 0 20px 0;">Deletion Methods</h2>
+            
+            <div class="method">
+                <h3>Method 1: Uninstall the App (Instant)</h3>
+                <p><strong>Fastest and easiest method</strong></p>
+                <ol>
+                    <li>Go to your device Settings</li>
+                    <li>Find "Apps" or "Applications"</li>
+                    <li>Select "FruitCrush"</li>
+                    <li>Tap "Uninstall"</li>
+                </ol>
+                <p>✅ All local data is automatically deleted when you uninstall.</p>
+            </div>
+            
+            <div class="method">
+                <h3>Method 2: Email Request (Within 30 Days)</h3>
+                <p>Send us a data deletion request via email:</p>
+                <a href="mailto:your-email@example.com?subject=Data%20Deletion%20Request%20-%20FruitCrush&body=Hello,%0D%0A%0D%0AI%20would%20like%20to%20request%20deletion%20of%20my%20data%20from%20FruitCrush.%0D%0A%0D%0APlayer%20Name:%20[Your%20Name]%0D%0ADevice:%20[Android]%0D%0A%0D%0AThank%20you." class="email-button">
+                    📧 Send Deletion Request
+                </a>
+                <p><strong>Include in your email:</strong></p>
+                <ul>
+                    <li>Subject: "Data Deletion Request - FruitCrush"</li>
+                    <li>Your player name (if applicable)</li>
+                    <li>Device type (Android)</li>
+                </ul>
+                <p>We will confirm deletion within 30 days.</p>
+            </div>
+            
+            <div class="method">
+                <h3>Method 3: Reset Advertising ID</h3>
+                <p>To reset your advertising identifier:</p>
+                <ol>
+                    <li>Open device Settings</li>
+                    <li>Go to Google → Ads</li>
+                    <li>Tap "Reset advertising ID"</li>
+                </ol>
+                <p>This resets your ad identifier but keeps your game progress.</p>
+            </div>
+            
+            <div class="info-box">
+                <h3>🔒 Your Privacy Rights</h3>
+                <ul>
+                    <li><strong>Right to Access:</strong> Request a copy of your data</li>
+                    <li><strong>Right to Deletion:</strong> Request deletion of your data</li>
+                    <li><strong>Right to Portability:</strong> Export your data</li>
+                    <li><strong>Right to Opt-Out:</strong> Opt-out of personalized ads</li>
+                </ul>
+            </div>
+            
+            <h2 style="color: #FF6B9D; margin: 30px 0 20px 0;">Frequently Asked Questions</h2>
+            
+            <div class="method">
+                <h3>Q: How long does deletion take?</h3>
+                <p><strong>A:</strong> Uninstalling the app deletes data instantly. Email requests are processed within 30 days.</p>
+            </div>
+            
+            <div class="method">
+                <h3>Q: Can I recover my data after deletion?</h3>
+                <p><strong>A:</strong> No, deletion is permanent and cannot be undone.</p>
+            </div>
+            
+            <div class="method">
+                <h3>Q: What about my VIP purchase?</h3>
+                <p><strong>A:</strong> VIP purchases are managed by Google Play. Contact Google Play support for refund requests.</p>
+            </div>
+            
+            <div class="method">
+                <h3>Q: Will my data be shared after deletion?</h3>
+                <p><strong>A:</strong> No, once deleted, your data is permanently removed and not shared with anyone.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Need help? Contact us at <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p style="margin-top: 10px;">
+                <a href="privacy-policy.html">Privacy Policy</a> | 
+                <a href="terms.html">Terms of Service</a>
+            </p>
+            <p style="margin-top: 15px; color: #999;">
+                FruitCrush © 2024 | Package: com.fruitcrush.game
+            </p>
+        </div>
+    </div>
+</body>
+</html>
